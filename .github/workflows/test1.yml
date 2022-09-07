@@ -1,9 +1,38 @@
 name: projet1
 on: [push]
-jobs:
-  jobs1:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    - name: hello world 
-      run: echo  hello world
+env:
+  variable: var1
+  jobs:
+    jobs1:
+      runs-on: ubuntu-latest
+      env:
+       fanilo: 15
+      steps:
+       - uses: actions/checkout@v3
+       - name: hello world 
+         run: echo $variable
+    jobs2:git
+        runs-on: ubuntu-latest
+        steps:
+         - uses: actions/checkout@v3
+         - name: hello world 
+           run: echo $fanilo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
