@@ -1,6 +1,5 @@
 name: push and pull request 
 on : [push, pull_request]
-
 env:
  mpush: "c'est un push!"
  mpull: c'est une pull request!
