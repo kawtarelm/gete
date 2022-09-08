@@ -11,7 +11,7 @@ env:
        - uses: actions/checkout@v3
        - name: hello world 
          run: echo $variable
-    jobs2:git
+    jobs2:
         runs-on: ubuntu-latest
         steps:
          - uses: actions/checkout@v3
