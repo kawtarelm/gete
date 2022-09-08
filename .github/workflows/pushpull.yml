@@ -8,13 +8,13 @@ jobs:
   push_ci:
     runs-on: ubuntu-latest
     steps:
-      -uses: actions/checkout@v3
-      -name: push
-       run: echo $mpush
+      - uses: actions/checkout@v3
+      - name: push
+        run: echo $mpush
   pull_request_ci:
     runs-on: ubuntu-latest
     if: ${{github.event_name == 'pull_request'}}
     steps:
-      -uses: actions/checkout@v3
-      -name: pull request 
-       run: echo $mpull
+      - uses: actions/checkout@v3
+      - name: pull request 
+        run: echo $mpull
