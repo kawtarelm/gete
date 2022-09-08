@@ -12,7 +12,7 @@ jobs:
     -uses: actions/checkout@v3
     -name: push
      run: echo $mpush
-pull_request_ci:
+ pull_request_ci:
   runs-on: ubuntu-latest
   if: ${{github.event_name == 'pull_request'}}
   steps:
